@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Кибер-кликер</title>
+		<script
+		  src="https://code.jquery.com/jquery-3.6.3.js"
+		  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+		  crossorigin="anonymous">
+		</script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="game">
+			
+			<div class="money">
+				<img src="img/money.png">
+				<div class="money__num">0</div>
+			</div>
+			<img src="img/001.png" class="personage">
+			<div class="level">
+				<div class="level__name">Уровень 1</div>
+				<div class="level__progress"></div>
+			</div>
+		</div>
+		<div class="shop">
+			<div class="shop__title">Кибер-маркет</div>
+			<div class="product">
+				<div class="product__item" data-price="100" onclick="money_plus_1()">
+					<div class="product__title">+1 монета за клик</div>
+					<div class="product__description">увеличение награды за каждый клик на 1 монету</div>
+					<div class="product__price">100К</div>
+				</div>
+				
+				
+				<div class="product__item" data-price="10" onclick="auto()">
+					<div class="product__title">автоклик</div>
+					<div class="product__description">+1 монета в секунду</div>
+					<div class="product__price">10К</div>
+				</div>
+				<div class="product__item" data-price="200" onclick="money_x_2()">
+					<div class="product__title">x2 монет за клик</div>
+					<div class="product__description">увеличение награды за каждый клик в 2 раза</div>
+					<div class="product__price">200К</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
