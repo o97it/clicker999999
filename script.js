@@ -25,6 +25,7 @@ levels={
 	1:{"click":10, "img":"img/001.png"},
 	2:{"click":20, "img":"img/002.png"},
 	3:{"click":30, "img":"img/003.png"},
+	4:{"click":40, "img":"img/004.png"},
 }
 
 $('.personage').on('click',function(){
